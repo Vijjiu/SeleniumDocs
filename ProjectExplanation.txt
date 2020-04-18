@@ -1,0 +1,125 @@
+  
+
+ Front End
+ Middle Ware
+ Back End
+
+ Front End UI ->
+ Agile ->Jira 
+
+ sprint - 3 week 
+
+ Every story we need to create a task..
+  1. Understanding require
+  2. Design
+  3. Coding
+  4. Unit testing
+
+  1. Understanding requirements
+  2. Writing Testcases
+  3. Automation Testcases..
+  4. Exec
+  5. Raising 
+  6. Re-testing..
+              40 hours..
+
+  Selenium WebDriver -> automate UI..
+  Page Object model,Fwk,Maven,Jenkins,Github..
+  We added logger and stored in object information in repository.
+
+
+  REST Services->> automate..getDetails..
+  SQL->Back end..->queries..
+
+
+  POSTman
+  POSTER
+  SOAPUI - licensed..
+  JMETER
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+String param1= "IIT";
+
+dictionary.add("param1","IIT");
+
+HashTable<String,String> ht = new HashTable<String,String>();
+
+ht.put("param1","IIT");
+
+
+
+
+Find the repetetive characters in a String..and count of them..
+
+
+   Sudheer
+
+  alsgjkajksjakgjkgajskjkgasljkasjklajlsljasklj
+
+   S-1
+   u-1
+   d-1
+   h-1
+   e-2
+   r-1
+
+logger
+Github
+Database..
+WebSerivces..
+Cucumber->
+
+demo.openmrs.org..
+
+ECG
+SPo2
+NBP
+
+
+
+
+public int[] function()
+{
+      int a[] =new int[5];
+
+	return a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

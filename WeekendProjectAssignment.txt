@@ -1,0 +1,22 @@
+E-Commerce Website:
+https://www.retailmenot.com/
+1. Wait for the popup and clos it
+2. Navigate to Browse Deals-> Product Deals.
+3. Verify the Product Deals page is loaded.
+4. Click on Electronics
+5. Find out number of deals available in Electronics section- 16..
+
+Locator we use in line no 5 should be parameterized s well.
+
+sudheer.h2kinfosys@gmail.com
+
+
+1. Do Manual Testing
+2. Understand the flow 
+3. Identify properties at each and every step.
+4. Automating step by step.
+5. Execute on FF.
+
+DataDriven
+Modular
+PageObjectModel

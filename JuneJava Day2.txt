@@ -1,0 +1,112 @@
+Generate the input Data:
+
+10 different sets of Data
+
+
+Dynamic Input Data
+
+Ex:
+Regsiter the Patient
+
+java.util.Random
+
+
+testqa123
+testqaA234@gmail.com
+testqaB
+
+Random unique number
+
+1sec = 1000 milliseconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+Inheritance:
+
+
+A -SuperClass,BaseClass,Parent Clas
+	m1()
+	int a
+
+B - SubClass,DerivedClass,ChildClass
+
+
+public class B extends A
+
+
+public class C extends A
+
+public class D extends A
+
+public class E extends A
+
+
+
+
+C
+
+
+D
+
+
+E
+
+Animal and Dog
+
+Dog is-a Animal - Inheritance
+
+
+has-a -Composition
+
+public class Animal
+{
+
+	public Dog d;
+
+
+}
+
+Access Specifiers:
+
+public
+private
+protected
+default
+
+http://total-qa.com/selenium/demo-sites/
+http://total-qa.com/real-time-scenarios-selenium-webdriver/
+
+
+ How to apply break from an nested for loop in java? 
+Lets try this on a Real Time Website -> https://demo.openmrs.org/openmrs/login.htm
+
+Access the url and enter Admin/Admin123 as credentials
+Select the ‘Inpatient Ward’.
+click on Login.
+Navigate to Appointment Scheduling->Manage Service Types.
+Write Selenium WebDriver Script to verify the Service Type ‘Urology’ available in the html table.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

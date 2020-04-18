@@ -1,0 +1,77 @@
+
+
+Selenium Automates Browsers(IE,FF,Chrome,Safari,Opera,Android,ios)
+Selenium is not helpful to automate Desktop Based Applications.- Calculator
+Selenium Successor RC is deprecated not in use
+Selenium Server has grid capabilities.Grid is useful to execute testcases on a remote desktop.
+Selenium IDE(Integrated Dev Environment) is a FF add-on useful to record and playback the websites.
+Selenium is compatible with multiple OS'-Windows,Linux,Apple OS
+Selenium scripts can be coded in multiple language-Java,C#,Python,Ruby
+
+
+Selenium Automates Browsers(IE,FF,Chrome,Safari,Opera,Android,ios)??
+
+FB
+Yahoo
+Rediff
+
+What are the web components/web elements/html elements which are visible to the user??
+Textbox-type
+Listbox-select
+Radio-click
+Checkbox-click
+Links-click
+Button-type of the button is submit its a submit          
+       type of the button is not submit its a buttton
+Text Informaiton
+Img
+labels
+Videos
+
+
+
+Automation:
+textbox
+find:attributes-name,id,classname,type
+action:sendKeys
+
+Radio
+find:attributes-name,id,classname,type
+action:click
+
+
+
+
+
+<input class="inputtext _58mg _5dba _2ph-" data-type="text" name="firstname" aria-required="1" placeholder="" aria-label="First name" id="u_0_f" type="text">
+
+class: inputtext _58mg _5dba _2ph-
+name: firstname
+id:u_0_f
+type:text
+
+
+<input onblur="fieldTrack(this);" name="name105cd13c" value="" style="width:185px;" maxlength="61" type="text">
+name:
+type:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

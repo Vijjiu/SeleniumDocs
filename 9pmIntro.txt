@@ -1,0 +1,74 @@
+TEsting an application
+
+Scope- Perform Functional Testing
+
+Scope for Java in Selenium
+Class
+Methods
+Invoke Methods
+Arrays
+Loops
+Conditional Statements
+
+Writing to a file in a network
+Reading from a File in a network
+
+TestCase:
+10 Steps
+Automate first step
+
+10 STeps - you keep in one program
+
+Java::
+OOps
+Basics
+
+Selenium is an automation tool.
+4 Components
+1. Remote Control - Outdate
+2. IDE - Recording & Playback. Quick bug reproduction Scripts,Explore the applications
+3. WebDriver-Latest -Regression Suite,Scale number of testcases
+4. Grid- Useful to execute the code in remote desktop.
+
+http://docs.seleniumhq.org/
+Limitation:
+Cannot automate desktop Based Applications
+Ex:notepad.exe,calculator.exe
+
+Selenium is helpful to automate multiple browsers
+	 -IE,Firefox,Chrome
+Selenium Scripts can be written in multiple languages.
+	-Java,C#,Python,Ruby,Perl
+Selenium Scripts can be executed on Multiple Platform
+         Linux,Windows,MAC
+
+
+Roles of Responsibilities of Automation Tester:
+1. Understand the application / requirements.
+2. Gothrough the Manual Testcases.
+3. Execute few of them.Find out the steps which are missing.
+4. Start automation.
+
+
+Selenium code to see why it is failing??
+Give me the manual steps.
+
+
+Textbox ->Enter text
+button->Click on button
+next page verify the text->
+
+
+Automation done..
+Textbox ->Enter text
+ 
+next page verify the text->
+
+
+List down highlevel Scenario's
+E2E Scenario
+Customer Scenario
+
+20 lines of program
+Erro in line  
+

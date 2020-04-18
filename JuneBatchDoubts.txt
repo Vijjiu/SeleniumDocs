@@ -1,0 +1,101 @@
+Doubts:
+
+
+Java:
+	Datatypes
+	Variables
+	Arrays
+		1D
+		2D
+		Printing the values of the Array
+	conditioal Statements
+	Loops
+		for(int i=0;i<200;i++)
+		{
+			Syso("selenium");
+
+		}
+		while
+		do-while
+	Switch
+	Methods
+		static
+		non-static
+	Object
+	Constructors->In Selenium 
+		      Page Object Model
+
+
+public class AppTests{
+	WebDriver driver;
+	int i ;
+	@BeforeClass
+	public void  createDriverInstance()
+	{
+		i =20;
+		driver = new ChromeDriver();
+	}
+	@Test
+	public void validateLoginPage()
+	{
+		launchApp();
+		LoginPage login = new LoginPage(driver);
+		boolean result=login("a1","b1","succesful");	 
+	 	//Adding a verificatioon point
+		Assert.assertTrue(result);
+	}
+
+  }
+  public class LoginPage
+  {
+	WebDriver driver;
+	public LoginPage(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+	public void lauchApp()
+	{
+		 //Enter the url
+		driver.get("url");
+	
+	}
+	public boolean login(String username,String password,String expected)
+	{
+		Enter username
+		Enter password
+		click login button
+		String actual = fetch the msg;
+		boolean result = actual.equals(expected);
+		return result;
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

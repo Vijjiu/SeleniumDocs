@@ -1,0 +1,82 @@
+Eclipse is an IDE(Integrated dev Env) useful to creating Java Proj,Writing Java Programs
+and Executing Java Programs.
+
+
+Steps for downloading Eclipse
+-----------------------------
+Link for downloading Eclipse https://eclipse.org/downloads/
+Package to download is ->Eclipse IDE for Java EE Developers, 254 MB
+Eclipse is downloaded to the windows in zip format.
+Unzip the file to a particular location and click on eclipse.exe
+
+
+In a java project it contains two folders
+
+src contains java programs
+bin contains class files. When the compilation automatically in eclipse it stores the class files in the bin folder
+
+
+Datatype:
+---------------
+Datatypes helps to store values in a variable. They are total 8 datatypes in java.
+
+
+int x=5;
+
+Datatype  -  Size
+----------------------
+byte	     1byte   8bits b=-128 to 127;  byte b = -128;
+short	     2 bytes
+int	     4 bytes
+long	     8 bytes for storing time in milliseconds. 10 *60*60*1000
+            -----------Integers
+
+float	     4 bytes  float f = 2.5f;
+double       8 bytes  double d = 2.5;
+
+	     ----------Decimal numbers
+
+char	     2 byte Character code char c = 'a';
+boolean	     true or false         boolean b = true;
+
+Variable:
+----------------
+Variables helps to store the values. Also the name implies which varies the value
+is called an variable.
+
+		int i=5; Assigning a value of 5 in variable i of type integer.
+
+		i=6;		
+
+
+		LHS  =RHS;
+
+		int i ;Declartion of integer variable
+
+		i=5; //Assingment
+
+		i=6;
+
+	Declaration happens only once. But Assignment happens 'n' number of times
+
+Rules for Creating the Variable Names:
+-----------------------------------------
+1. Single Character is allowed for vnames.
+2. Group of characters are allowed for vnames.
+3. Alphanumeric characters are allowed for vnames.
+    (Combination of characters and numbers) a1,b1,student1
+4. Variable names should start with character but not numbers
+5. Keywords which are reserved/predefined cannot be used for vnames. 
+
+
+
+Eclipse shortcuts -> syso ctrl+space
+                     Execute ctrl+F11
+                        
+
+
+
+
+
+
+

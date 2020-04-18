@@ -1,0 +1,93 @@
+Page Object Model:
+
+Design Pattern used by java developers for the develpments of java projects.
+
+Advantages:
+1. Reduce Duplication/Redundancy  of Code using page object model.
+   Create functions to avoid duplication. We can reuse the code.
+   
+   
+   Accessmodifier returntype methodname(arg1,arg2...)
+   {
+   
+		block of statements
+		
+		return value;
+   }
+   //retailmenot
+   
+   public class DealsPage
+   { 
+       Get the number of items in a paritcuular section
+       public int countElectronics(String sectionName)
+      {
+   
+	      "+sectionName+"
+	     	List<WebElement> e = 	driver.findElements(By.css("#id='"+sectionName+"']>div>div")));
+	     	int count = e.size();
+		  syso("Number of electronics" + count);
+		  return count;
+		
+      }
+   }
+   1.Accessed HomePage
+   2. Deals PAge
+   
+
+2. Easy maintenance
+	Associate the functions to the pages.
+	Create a java program for every page and keep the associated functions in the page.
+
+	LoginPage.java -> siginin(),signup()
+
+
+
+
+
+	RetailMeNotTests.java
+
+			@Parameters({"sectionName","sectionCount"})
+			@Test
+			public void verifyDealsCount(String sectionName,String sectionCount)
+			{
+
+				DealsPage dealsPage = new DealsPage();
+				int actual = dealsPage.getDealscount(sectionName);
+				int expected = Integer.parseInt(sectionCount);
+				Assert.assertEquals(actual,expected);
+			 
+			
+			}
+
+
+
+        @Test
+		{
+		
+			call method
+			
+			SoftAssert
+		
+		
+		}
+		public void m1()
+		{
+		
+			step2
+		
+		
+		}
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+   

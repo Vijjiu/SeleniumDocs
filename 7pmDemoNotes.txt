@@ -1,0 +1,55 @@
+Hi All,
+
+Thanks for joining the demo session.
+
+Please wait few more mins let others join.
+
+
+Thanks,
+Sudheer@h2k.
+
+45 hours M To F
+
+Introduction:
+Exp
+Automation tools
+Doubts.???
+
+Selenium IDE 
+
+Java:
+History
+Execution flow from command line
+Eclipse 
+Datatypes
+Arrays
+Loops
+Conditional Statements
+Switch
+Methods-Static Vs NonStatic
+Usage of Static Vs NonStatic,Object,Class
+Constructors
+Inheritance
+Interface
+Abstract class
+Exceptions
+Polymorphism
+List
+Set
+
+Selenium
+
+Testng
+
+Page Object Model:E2Escneari
+
+Maven
+
+Jenkins
+
+Grid,Databases,Github
+
+
+
+
+

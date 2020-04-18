@@ -1,0 +1,90 @@
+Inheritance:
+--------------
+(reusability)
+The process of inheriting variables and methods from superclass to subclass
+is known as inheritance.
+
+2. The class members inherited from a class is known as superclass.
+
+3. The class members inherited to a class is known as subclass.
+
+4. The superclass is also known as baseclass/parent class.
+
+5. The subclass is also known as derived class/child class.
+
+6.****Only non-static class members are inherited from super class to subclass.
+
+
+Note: Non - static class members are at the object levelEx: roll
+      Static class members are at the class level.Ex: schoolname
+
+7. Static class members are not inherited from superclass to subclass.
+
+8. 'extends' is the keyword useful to maintain the relationship between
+superclass and subclass.
+
+9. They are total 3 types of inheritance in java are as follows:
+
+                a. Single Inheritance
+
+		b. Multi level Inheritance
+
+
+		c. Multiple Inheritance(Its not allowed in java)
+
+
+10. Single Inheritance:
+
+          Vehicle- Super Class
+          Car-SubClass
+
+Overriden methods: If two methods which are having same name and same parameters
+available in superclass and subclass known as overriden methods
+
+
+11.Multi level Inheritance
+
+	  Vehicle - Super Class
+          Car-    - extends Vehicle
+	  RacingCar-  extends Car
+
+12. Multiple Inheritance: MI is not allowed in java due to diamond problem
+	public class Swift extedns classA, classB // this is not allowed in java
+	We can extned only one class in java.
+-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

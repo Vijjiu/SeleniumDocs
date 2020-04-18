@@ -1,0 +1,158 @@
+
+Methods
+----------------
+
+Methods are nothing but functions in java.The main objective of function to do a specific task.
+Advantages of functions- reusability, save time,save effort.
+
+
+Syntax of methods in java:
+--------------------------
+
+Type1: methods which returns values.. nonvoid methods
+--------
+              
+               Modifier returntype methodname(arg1,arg2,........)
+	       {
+			//method body
+			return value;
+
+               }
+
+ex:
+               public int add(int a,int b)
+	       {
+
+			int c = a+b;
+			return c;
+		}
+
+
+
+		Modifier-public
+                returntype - int
+                methodname- add
+                arguments-int a,int b
+                return value - c
+                method body - int c =a+b;
+
+  Return value 'c' of type int should be matching with return type 'int'.
+		
+		public WebElement findElement(By)
+		{
+
+			WebElement e;
+			return e;
+		}
+		modifier - public
+		returntype-WebElement
+                methodname-findElement
+                arguments - By
+                return value - e
+                methodbody - WebElement e;
+
+                Note: the returntype should match with returnvalue.
+                returntype-WebElement
+                return value - e
+ 
+
+Type2- void methods.. methods doesnt return any value.
+------------
+
+	   modifier returntype methodname()
+	   {
+
+			methodbody;
+	   }
+
+Ex:	   public void display()
+	   {
+
+		System.out.println("abc");
+
+	  }
+
+	 modifer-public
+         returntype - void  //Dont return anything.It returns nothing.
+	 methodname-display
+	 arguments-blank.. but args can be metnioned as well.
+         method body - System.out.println("abc"); 
+
+
+	 public void get(String url)
+	 {
+
+		enterurl(url);
+
+         }
+   	 modifier - public
+	 return type - void
+	 methodname-get
+         arguments-String ulr
+         methodbody - enterurl(url);
+
+
+Note: void methods doesnt return any value.
+      arguments are not mandatory
+--------------------------------------------------------------------------------------
+Class Members: The methods and variables available within a class are called as ClassMembers.All Java classes contains methods and variables.
+
+If the class contains methods and variables, we have invoke them in the main method
+by creating an Object for the class.
+
+       Syntax for creating an object:
+
+		ClassName objName = new ClassName();
+
+
+They are two types of classMembers(V&M)
+
+1. static class members
+	public static int add(int a,int b)//a=3 , b=5
+	{
+		int c = a+b;
+		System.out.println(c);
+		return c;
+	}
+
+2. non static class members.
+	
+	public int add(int a,int b)//a=3 , b=5
+	{
+		int c = a+b;
+		System.out.println(c);
+		return c;
+	}
+
+Methods and variables which are not having static keyword are known as non static class members.They are 
+accessed using objects.
+
+Methods are variables which are having static keyword are known ad static class members.
+They are accessed using className.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+
+
+
+

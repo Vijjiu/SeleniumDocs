@@ -1,0 +1,90 @@
+DAta :
+
+In QA environment we have to set it up : Static Data: 
+
+
+DAta Driven Fwk: Input DAta:
+
+Flight Passenger Information
+
+E-Commerce App:
+Products
+Address
+Booking details:
+
+
+1st Row	Load Application URL	Load	url	http://demo.openmrs.org/		
+
+
+String description = "Application URL";
+String keyword = "Load";
+String eleRef = url;
+String eleRefValue="http://";
+String data="";
+
+if(keyword.equals("Load"))
+{
+
+		driver.get(eleRefValue);
+}
+
+2nd Row Enter Username	InsertData	id	username	Admin123	
+
+String description ="Enter USerName";
+String keyword="InsertData";
+String eleRef ="id";
+String eleRefValue="username";
+String data="Admin123";
+
+
+if(keyword.equals("InsertData"))
+{
+
+	driver.findElement(By.id(eleRefValue)).sendKeys(data);
+}
+	
+
+
+<select aria-label="Day" name="birthday_day" id="day" title="Day" class="_5dba">
+	<option value="0">Day</option>
+	<option value="1">1</option> 
+</select>
+
+Description - Select a Value in Listbox
+Keyword-select
+eleRef- id
+eleRefVale-day
+data- 1
+
+if(keyword.equals("Select"))
+{
+		
+	Select sel = new Select(driver.findElement(By.id(eleRefVale ));
+	sel.selectByVisibleText(data);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

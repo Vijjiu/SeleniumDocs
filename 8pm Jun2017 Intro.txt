@@ -1,0 +1,108 @@
+Hi All,
+
+Thanks for joining.
+
+Lets Wait for Few mins. 
+
+Thanks,
+Sudheer
+
+
+HTML
+
+
+Classes starts regularly from next week.
+From next week..M-F @ 8pm to 9pm EST
+Recordings
+Notes
+Programs
+
+45 days
+
+July 15 th
+
+Java - From basics you need to practise atleast 1- 2 hours
+JavaScript is an scripting language.. which we ar not using.
+We use Java only..
+
+
+Am able to manual testing 
+am not able to follow automation scripts??
+Coding- Dev
+Coding -> Testers for automating Testcases
+
+
+sudheer.h2kinfosys@gmail.com
+
+
+Selenium is useful to automate Web based applications.
+We will test the applications by identifying the properties and perform actions.
+button - click(action)
+textbox-sendKeys
+radio-click
+checkbox- click
+hyperlink-click
+listbox-click
+
+HTML->
+Hyper Text Mark up Language
+Useful for designing WebPages-WebDev/Designer UI Dev
+Testing the WebPages using Selenium- Automation Testing
+
+Manual Testing
+Textbox
+button
+radio
+hyperlink
+listbox
+text
+img
+
+Automation Testing:Properties QTP/Selenium/
+
+Textbox-<input type="text" id="usrname">
+button-<input type="button" id="login">
+radio-<input type="radio" id="u_0_1">
+hyperlink-<a href="">Click</a>
+listbox-<select>
+	<option value="Jan">January</option>
+	</select>
+text-div/span
+img - <img src="">
+table-
+
+
+S1 
+S2 
+
+same name
+using id
+
+
+www.w3schools.com
+
+
+
+Whenever we need to use a button in form
+the type should be submit
+
+type as button
+
+table
+tr-table row
+td - table data 
+th - table heading
+
+For Testing WebApplications the tester should be having knowledge in html.
+
+
+
+
+
+
+
+
+
+
+
+

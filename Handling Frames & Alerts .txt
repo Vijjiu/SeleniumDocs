@@ -1,0 +1,98 @@
+Handling Frames:
+------------------
+HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized: into rows and columns.
+
+Switch to a frame:
+
+driver.switchTo().frame(String framename)
+driver.switchTo().frame(int index)
+driver.switchTo().frame(String frameid)
+		
+
+url ->http://seleniumhq.github.io/selenium/docs/api/java/index.html
+
+
+<frameset onload="top.loadFrames()" title="Documentation frame" cols="20%,80%">
+	
+      <frameset onload="top.loadFrames()" title="Left frames" rows="30%,70%">
+			<frame title="All Packages" name="packageListFrame" src="overview-frame.html"/>
+		       <frame title="All classes and interfaces (except non-static nested types)" name="packageFrame" src="allclasses-frame.html"/>
+        </frameset>
+
+ <frame scrolling="yes" title="Package, class and interface descriptions" name="classFrame" src="overview-summary.html"/>
+
+</frameset>
+
+
+
+ 80% -> classFrame
+
+
+ 20%
+
+      30%  - packageListFrame
+
+      70%  - packageFrame
+
+
+Scenario:
+
+1. frame 1 click on org.openqa.selenium.Firefox package
+2. frame 2 click on FirefoxDriver
+3. frame 3 retrieve the Text and verify the scenario pass/fail.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Handling Alerts / Pop-up's
+---------------------------
+
+		Alert alert = driver.switchTo().alert();
+		String popupText = alert.getText() 
+		alert.accept(); //to click on ok
+		alert.dismiss(); to click on cancel
+
+
+
+
+
+
+
+		 
+		
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

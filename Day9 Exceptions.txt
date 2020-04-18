@@ -1,0 +1,96 @@
+Exception is an abnormal condition. In java, exception is an event that disrupts the normal execution flow of the program.Exceptions are usually nothing but recovery scenario.
+
+Advantages of Exception:
+------------------------------
+Let's take a scenario:
+statement 1;  
+statement 2;  
+statement 3;  
+statement 4;  
+statement 5;//exception occurs  
+statement 6;  
+statement 7;  
+statement 8;  
+statement 9;  
+statement 10;  
+
+Suppose there are 10 statements in your program and there occurs an exception at statement 5, rest of the code will not be executed i.e. statement 6 to 10 will not run. If we perform exception handling, rest of the exception will be executed. That is why we use exception handling in java.
+
+
+In java they are two types of Exceptions which are as follows:
+
+1. Checked Exception(Compile Time Exceptions Ex: IOException)- 
+----------------------------------------------------------------
+CheckedExceptions are thrown  during Compile Time.
+
+a. If the compiler is forcing the user to write the code in try/catch block  or throws. Then those exceptions are compile Time Exceptions.
+
+b. Not Every method is required to put try/catch block only for the methods which are having throws keyword, for them compiler will force to put try/catch block or throws.
+
+c. Exception is the super class for all the compile Time Exceptions.
+
+try/catch will continue with execution even when we get exceptions
+throws will abort the execution even when we get exceptions.
+
+------------------------------------------------------------------------
+2. UnChecked Exception(RunTime Exceptions)-
+
+UnCheckedException are thrown during run time.
+
+RunTime Exceptions are mainly occured due to programmatical flaws done by the programms.
+       
+These are caught during RunTime. Thats the reason we call them as RunTime Exceptions.
+
+
+Ex: 
+ArithmeticExcepion - Divide by Zero.
+ArrayIndexOutOfBoundsException- Trying to access an array element which is not available.
+NullPointerException- Retriving the length() of null String.		
+NumberFormatException- Converting a String to Integer
+
+
+
+
+RunTimeException Class is the super class for all the RunTime(unchecked) Exception.
+
+
+Advantages:
+--------------------
+
+Exceptions will help us to proceed further even if we face issues in the code.
+Exceptions helps us to prevent from abnormal termination of the program.
+
+
+Exceptions in Selenium
+------------------------
+	In Selenium we always look for attributes to identify the elements.
+
+	<input id="username" name="username" type="text">
+
+
+	try
+	{
+
+		driver.findElement(By.id("username12345"))//NoSuchElementException which is                 an run time Exception.
+
+
+
+	}catch(
+
+
+RunTime Exceptions
+-------------------
+NoSuchElementException
+NoSuchFrameException
+noSuchWindowException
+NoSuchAlertException
+InvalidSelectorException
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+Selenium doesnt work with firefox..
+Exception->NotConnectedException
+
+1. Selenium jars of old version and Firefox Latest version >45
+2. Selenium jars of new version and Firefox old version 
+
+1. Java- Functions
+2. Selenium-Locators
+3. Testng-Annotations
+4. Page Object model
+
+Projects we are covering scenario
+
+Who ever registered??
+Please access the selenium training links
+
+Sudheer.h2kinfosys@gmail.com
+
+7pmEST
+
+
+
+public int getProductDeals(String dealName)
+{
+
+
+
+return val;
+}

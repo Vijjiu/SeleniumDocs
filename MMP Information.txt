@@ -1,0 +1,56 @@
+MMP is Manage my Patient application. Its an webapplication which is related to 
+Healthcare domain.
+As a automation tester my job is to automate the Modules in MMP.
+thhey are 4 modules
+ 
+MMP url->http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/
+
+Admin Credentials
+username: begum
+password: 1Loveusa
+
+Patient Credentials
+selenium
+Selenium123
+
+1. Patient
+	
+    Register A Patient->
+		Via home Page->Click on signin
+                Click on Register button -  					   
+         	Sign in     
+
+	Schedule Appointment-Verify the Patient Portal table contains the information.  
+		1.Date
+		2. Time 
+		3. Appointment 
+		4. Doctor
+
+	Fees -> Verify Fee Details,Outstanding Fee,Transaction History messages..  
+        
+	Search Symptoms
+		Parameterize for different symptoms
+		fever
+		headache
+		cold
+		cough 
+		Verify this symptom is existis in the symptoms column
+	
+        Information- 
+		Verify the static text contains MMP
+	Messages-
+		Verify the Message Sent successfully text.
+
+
+2. Admin
+	Patients -> Search for the patient- 
+		  
+
+		  Create Visit
+		    Add Prescription
+		    Create Fee
+		    Reports
+         Claim Center
+
+3. Doctor
+4. Insurance Provider..-> Mainly performed using webservices...

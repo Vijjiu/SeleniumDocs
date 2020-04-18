@@ -1,0 +1,110 @@
+Anyone unable to hear me pls reconnect back immediately
+
+Selenium->
+WebBased Automation Tool Not useful to automating Desktop Based Applications
+
+
+4 Components
+1. RC - Remote Control Server (deprecated not in use)
+2. IDE - Recording & play back(Integrated Dev Env)
+3. WebDriver - which is latest in selenium. 
+	a. Manually we hve to code..
+	b. Record in IDE and convert into WebDriver
+4. Grid- Execute TC on a remote desktop
+
+Course Agenda:
+Java Basics - 2 weeks
+Selenium-3 weeks
+Java OOps- 1 weeks
+Testng - 1 weeks
+Live Project - Page Object model+ Hybrid Fwk-3 days
+
+HTML which is mainly for designing web pages..
+SQL
+Unix
+APPIUM - mobile testing tool
+will run the selenium scripts on a real android devices.
+SOAPUI useful for testing web and REST services
+
+
+website url -> www.w3schools.com
+HTML Predefined Tags
+html
+head
+body
+title
+table
+	tr
+		td
+		
+img
+span
+div
+a - hyperlink
+input type = text/checkbox/radio/button
+select 
+	option
+	option
+
+XML ->
+Extensible mark-up language
+User Defined Tags
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

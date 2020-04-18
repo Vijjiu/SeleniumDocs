@@ -1,0 +1,42 @@
+
+1. what is your regression testing strategy? how you performed regression testing?
+
+2. You receive a 404 error...how would you troubleshoot that? do you capture logs? How would you capture logs?
+  logs...
+
+3. what is the different between Abstraction and Encapsulation?
+
+4. How do you handle AJAX calls in selenium webdriver?
+
+5. Today you came to office and try to login into the application with same username and  password 
+which it was working fine yesterday but today you are not able to login. 
+How would you debug? What are the ways you approach?
+	Reason : Network connection issue,Login Details Expired,Account locked,Multiple logins
+
+6. Explain the syntax WebDriver driver = new FirefoxDriver();
+		WebDriver is an interface.. 
+		FirefoxDriver is a class which implements webdriver interface...
+
+7. When do you use Throws and Throw in exception handling?
+		
+		//dev
+		public void verifyPassword(String password,String retypepassword)  throws PasswordNEException
+		{
+			if(!(password.equals(retypepassword))
+			{
+				 
+				throw new PasswordNEException();
+				
+			}
+
+		}
+
+		//end user..
+		try{
+		verifyPassword("welcome","welcome123");
+		}
+		catch(Exception e)
+		{
+
+		}
+	

@@ -1,0 +1,106 @@
+What is abstract Method?
+------------------------
+
+public abstract void engine();
+
+
+Interfaces:
+--------------
+
+Inheritance- reusability
+Abstract Class- If the method is incomplete then the class is also abstract
+
+Selenium WebDriver is an automation tool mainly useful to test on multiple browsers
+
+
+	interface WebDriver
+	{
+		public abstract void close();
+		
+		public abstract void LaunchBrowser();
+		 
+
+	}
+
+	public class FirefoxDriver implements WebDriver
+	{
+
+
+	}
+	public class InternetExplorerDriver implements WebDriver
+	{
+
+
+	}
+
+1. Interface is a java block  which contains 100% abstract  methods.
+
+
+2. Interface methods are by default public and abstract.
+
+3. Static modifier is not allowed for the methods in the interface which are abstract. Static methods 
+cannot be inherited to the subclass.
+
+
+4. In interface variables are final(constants). We have to intialize the variabls
+at the declaration only.
+
+	final variables means-> values once assigned cannot be re-assigned.
+
+5. In interfaces variables are 'public static final' by default.
+
+6. 'implements' is the keyword we have to use for interfaces.
+
+7. Aclass can implement multiple interfaces. The class should implement all the abstract methods in an interface.
+
+8. If a class is implementing an interface we can write in java as
+
+	WebDriver driver = new FirefoxDriver();
+	driver.closeBrowser();
+
+
+	 		if(ff)
+ 		{
+ 			WebDriver driver = new FireFoxDriver();
+ 		}
+ 		else if(IE)
+ 		{
+ 			 WebDriver driver = new InternetExplorerDriver();
+ 		}
+		else if(CH)
+		{
+ 			WebDriver driver = new ChromceDriver();
+		}
+		driver.launchBrowser(url);
+
+--------------------------------------------------------------------------------------
+ 		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

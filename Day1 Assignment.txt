@@ -1,0 +1,59 @@
+1 TC Automated:
+
+QA1->Current Build-> I got a defect..
+
+QA2->Dev Env
+
+
+QA3 -> Prod Env
+
+
+public void login(String username,String password)
+{
+
+	setUsername(username);
+	setPassword(password);
+}
+
+public void search()
+{
+
+
+}
+public void book()
+{
+
+
+}
+public void logout()
+{
+
+
+}
+
+
+public void cancel()
+{
+
+
+
+}
+
+
+
+
+
+
+
+Assingment :
+--------------
+
+1. Access the http://www.comcast.com/
+2. Navigate to Customer->CustomerService
+3. Count the number of linnks under Billing
+4. Also verify the text of all the links under billing
+
+
+
+
+

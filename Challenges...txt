@@ -1,0 +1,17 @@
+a. Handling Pop-up
+b. Some of the locators will not work in other Browsers.
+c. Object Identification
+d. Handling windows pop-up using Autoit.
+e. Handling Overlapped Menu bars.
+f. Google Maps
+g. Configuration issues with multiple browsers.
+i.  Flickering of IE Website
+j. Handling windows security pop-up and certificates.
+   Designing the framework.
+
+
+Solution for flickering website:
+Desired Capabilities..
+code -> https://github.com/seleniumhq/selenium-google-code-issue-archive/issues/4403
+https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities
+

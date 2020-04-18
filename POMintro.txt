@@ -1,0 +1,89 @@
+search()
+book()
+cancel()
+login()
+logout()
+
+
+HomePage
+   login()
+
+SearchPage
+   search()
+BookPage
+    book()
+CancelPage
+   cancel()
+SummaryPAge
+  logout();
+
+
+Automating a testcasse..
+
+Verify the booking is happening successfully.
+
+1. Login to application.
+2. Perform Search
+3. Do the Booking
+4. Logout of the application
+
+
+
+
+
+ @Test
+ public void verifyBooking()
+ {
+
+    HomePage home = new HomePage();
+    home.login();
+   SearchPAge search = new SearchPage();
+   search.search();
+   BookPage book = new BookPage();
+   book.book();
+   SummaryPage summary = new Summary();
+    summary.logout();
+
+
+ }
+
+
+ Testcases contains invocation of methods . And methods are available in pages.
+
+
+
+
+
+
+ 1. Passing the driver objects from tests to the pages.
+ 2. We should not hardcode the data in the methods.
+    We need to pass the data to these methods from the testcases..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

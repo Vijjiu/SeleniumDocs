@@ -1,0 +1,164 @@
+@Test
+
+	priority,dependsOnMethods,dataprovider,description,enabled
+
+
+@BeforeTest,@AfterTest
+@BeforeMethod,@AfterMethod
+@BeforeClass,@AfterClass
+@DataProvider: We can pass multiple rows of data from excel to our testcase using @Dataprovider.
+	name
+	Login(username,password)
+
+Points to be noted:
+--------------------
+1. ****BeforeClass will not be executed if you dont have any @Test method available in the class
+
+2. Long is a final Class and access the static method parseLong to convert the string into long.
+final classes cannot be extended.
+Ex:Long.parseLong(s);
+
+
+3. <suite name="Suite" parallel="tests" thread-count="3"> by using suite level 
+attributes parallel="tests" and thread-count="3"
+
+
+
+
+@Parameters:
+----------------
+
+http://www.h2kinfosys.com:900/
+
+
+url=http://www.h2kinfosys.com
+port=900
+
+String address=url+":"+port+"/";
+
+driver.get(address);
+
+
+browserType
+
+Implementing for IE:
+--------------------
+Path ->http://selenium-release.storage.googleapis.com/2.47/IEDriverServer_x64_2.47.0.zip
+
+
+
+Implementing the Chrome Browser:
+-----------------------------------
+For chrome browser access the link and download the zipfile.
+http://chromedriver.storage.googleapis.com/index.html?path=2.16/
+
+chromedriver_win32.zip
+
+2. Extract the zip file.
+3. Find the absolute path for chromeDriver.exe.
+4. Pass this value to System.setProperty("webdriver.chrome.driver","Absolutepath to chromedriver.exe");
+
+
+
+Testng is useful to do brower Compatibility testing. Means we can test the webapplication
+on multiple browsers.
+FF,CH,IE
+
+
+Objective:Writing a class that should work on multiple browsers.
+
+
+Annotation required to access the parameter values from xml to the java program
+is @Parameters
+
+    public class ParlellTests
+    {
+       @Parameters({"browsertype","url"})
+       @BeforeTest
+       public void invokebrowser(String browserType,String url)
+       {
+//		
+	        
+		WebDriver driver;
+
+		if(browserType.equals("FF")
+		{
+        		driver =new FirefoxDriver();
+		}
+		else if(browserType.equals("IE")
+               {
+			System.setProperty("webdriver.ie.driver","c:\\IEDriverServer.exe");
+	                driver = new InternetExplorerDriver();
+                }
+		else
+                {
+                    System.setProperty("webdriver.chrome.driver","C:\\ChromeDriverServer.exe");
+                    driver = new ChromeDriver();
+                } 
+               // driver.get("http://www.google.com");
+		driver.get(url);
+
+	}
+      
+        @Test
+        public void verifyTitle()
+        {
+
+	   Assert.assertEquals(driver.getTitle(),"Google");		
+
+         }
+  }
+
+
+//Suite level attributes paralell & thread-count
+
+  <suite name="GoogleSuite"  paralell="tests" thread-count="3">
+	<test name="Googletest">
+	<parameter name="browsertype" value="CH" />
+	<parameter name="url" value="http://www.google.com" />
+	<classes>
+		<class name="testng.ParlellTests" />
+                <class name="testng.ParlellTests" />
+       </classes>
+       </test>
+
+        <test name="Googletest">
+	<parameter name="browsertype" value="FF" />
+	<parameter name="url" value="http://www.google.com" />
+	<classes>
+		<class name="testng.ParlellTests" />
+       </classes>
+       </test>
+       <test name="Googletest">
+	<parameter name="browsertype" value="IE" />
+	<parameter name="url" value="http://www.google.com" />
+	<classes>
+		<class name="testng.ParlellTests" />
+       </classes>
+       </test>
+  </suite>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

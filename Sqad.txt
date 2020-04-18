@@ -1,0 +1,75 @@
+Student:Jyoti
+Experience:Fresher
+Tools:Selenium,Manual-h2kinfosys
+Expectation:Experience in Automation
+
+Student:Mousami
+Experience:Fresher
+Tools:Selenium,Manual-h2kinfosys
+Expectation:Experience in Automation
+
+Student:Revathi
+Experience:3 + years of IT Experience 
+Tools:Selenium - 
+Expectation:SWitch to Automation 
+
+
+Student:Rina Verma
+Experience:Teaching
+Tools:Selenium - h2kinfosys
+Expectation:
+
+
+Student:Riti Singhal
+Experience:Fresher,Teaching profession
+Tools:Selenium - 
+Expectation:Switch to Automation
+
+Student:Seema
+Experience:Fresher`
+Tools:Selenium
+Expectation:Experience in Automation
+
+
+Student:Sathya
+Experience:3 + years of Real time
+Tools:Selenium Santhosh
+Expectation:Real time Projects Impl
+
+
+Student:Sirisha
+Experience:Fresher
+Tools:Selenium
+Expectation:Automation 
+
+
+Student:Sunita
+Experience:Fresher
+Tools:Manual TEsting,Selenium 
+Expectation:Switch to Automation
+
+
+Student:Vijaya
+Experience:Java Developer
+Tools:Selenium 
+Expectation:Real time Concepts
+
+
+Student:Vybhavi
+Experience:
+Tools:Manual Testing, Selenium 
+Expectation:
+
+Student:Himaja
+Experience:
+Tools:Manual Testing, Selenium 
+Expectation:
+
+Student: srabani
+Experience: 
+Tools : Manual TEsting,
+Expectation:
+
+
+
+

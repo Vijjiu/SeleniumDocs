@@ -1,0 +1,52 @@
+Executing Selenium Scripts using Jenkins Pipeline Script:
+
+Pipelines allows jenkins to support continuous integration (CI) and Continous Delivery (CD). Pipeline are nothing but the jenkins jobs the simple text scripts are based on Groovy Programming language. Pipeline terms such as "step","node" and "stage" are subset of vocabulary using in Jenkins.
+Step: 
+It defines the Single task which is part of the sequence tell jenkins what to do.
+
+Node: 
+A "node" means any computer that is part of your jenkins installation.
+
+Stage:
+A "stage"  is comprised of one or more build steps.
+
+Pre-requisites:
+Jenkins 2.0 is recommended 
+Core Pipeline Plugin
+
+Plugin Name - Pipeline :
+In this tutorial we will learn about using Pipeline plugin and its usage.
+It allows jenkins to execute the Pipeline API and Basic Steps.
+
+SCM's:
+Git Plugin
+
+Cloud Plugins{optional}:
+Docker 
+ec2
+
+echo "BUILD_NUMBER" :: $BUILD_NUMBER
+echo "BUILD_ID" :: $BUILD_ID
+echo "BUILD_DISPLAY_NAME" :: $BUILD_DISPLAY_NAME
+echo "JOB_NAME" :: $JOB_NAME
+echo "JOB_BASE_NAME" :: $JOB_BASE_NAME
+echo "BUILD_TAG" :: $BUILD_TAG
+echo "EXECUTOR_NUMBER" :: $EXECUTOR_NUMBER
+echo "NODE_NAME" :: $NODE_NAME
+echo "NODE_LABELS" :: $NODE_LABELS
+echo "WORKSPACE" :: $WORKSPACE
+echo "JENKINS_HOME" :: $JENKINS_HOME
+echo "JENKINS_URL" :: $JENKINS_URL
+echo "BUILD_URL" ::$BUILD_URL
+echo "JOB_URL" :: $JOB_URL
+
+Creating a Simple PipelineScript:
+1. Click on New Item in jenkins home Page.
+2. Provide the new item name. Select the "Pipeline" option. Click on OK button.
+3. Click on "Directive Generator" and provide the details of Stage Name and click on "Generate Declarative Directive".
+4. Click on "Add->Input" to prompt the user with input message.
+
+
+
+
+

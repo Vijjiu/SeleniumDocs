@@ -1,0 +1,25 @@
+Selenium is an Automation Tool
+Selenium is mainly useful to automate webbsed applications.
+Webbased applications GUI has been developed using HTML language(hyper text markup lang).
+We need to identify the properties of the elements displayed in the web page.
+Using properties we will write the script.
+
+Elements::
+button
+textbox
+password
+link
+listbox
+checkbox
+radio
+text- div/span
+table
+div
+span
+img
+
+
+https://www.w3schools.com/
+SQL
+VBScript
+Javascript

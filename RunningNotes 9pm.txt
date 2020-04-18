@@ -1,0 +1,81 @@
+Page Object is a Design Pattern which has become popular in test automation for enhancing test maintenance and reducing code duplication.
+
+
+Code Duplication??
+By using reusable methods -50 one class
+Inheritance..
+
+
+TestMaintenance:
+
+
+In RetailMeNot.com how many pages are involved in the flow
+
+HomePage -> 
+browse Product Deals
+
+ProductDealsPage->
+Jump to Electronics
+Find the count of Electronic Deals
+
+
+TestCase-TC1
+1. Open retailmenot.com
+2. browser product deals
+3. jump to electronics
+4. verify electronic deals count
+
+TC2
+1. Open retailmenot.com
+2. browser product deals
+3. Count the number of categories in jump to section.
+
+
+
+@Test
+public void verifyDealsCount()
+{
+	driver.get()
+	Utility.browsePRoductDeals();
+	//click on electronics
+	//fetch the count
+
+
+}
+
+@Test
+public void verifyJumpToCategories()
+{
+	driver.get()
+	Utility.browsePRoductDeals();
+	 
+
+
+}
+public class HomePage{//10 functions
+
+	public static boolean browsePRoductDeals()
+	{
+
+
+
+	}
+}
+public class PRoductDealsPage{ 20 functions
+{
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

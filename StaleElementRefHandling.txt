@@ -1,0 +1,33 @@
+StaleElementReferenceException
+
+We identify the element but when we are trying perform
+the action the element is not visible..
+
+
+//Parent Window
+WE e= driver.findElemenet(By.id(""));
+
+
+ driver.switchTo().window("name of the window");
+ e.click();
+
+
+2nd Scenario:
+
+ elements are loaded 
+ SearchTextbox : selenium  
+ searchbutton: Click
+ Refreshes
+ elements are loaded again..
+
+ int counter = 3;
+ for(int i =0 ;i<counter;i++)
+ { 
+	try{
+ 		findElement you get stalement element reference exception
+		break;
+	   }
+	   catch(Exception e)
+	   {
+	   }
+ }

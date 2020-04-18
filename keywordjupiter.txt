@@ -1,0 +1,76 @@
+
+Select select = new Select(driver.findElement(By.id("questions_16_Month")));
+select.selectByVisibleText("January");
+
+
+Keyword Driven Fwk:
+
+InputData :January
+Locator :id:questions_16_Month
+Locator property:questions_16_Month
+Keyword : select
+
+if(keyword.equals("select"))
+{
+	selectValue(driver,"january","id","questions_16_month");
+}
+public void selectValue(WebDriver driver,String inputdata,String locator,String locatorValue)
+{
+
+	WebElement ele;
+	ele =findWebElement(driver,locator,locatorvalue);
+	Select select = new Select(ele);
+       select.selectByVisibleText(inputdata);
+
+}
+public WebElement findWebElement(WebDriver driver,String locator,String locatorValue)
+{
+	WebElement e;
+	if(locator.equals("id")
+	{
+		e= driver.findElement(By.id(locatorValue));
+	}
+	return e;	
+}
+
+
+
+
+}
+
+
+
+driver.findElement(By.xpath("//")).sendKeys("selenium");
+
+
+
+DataDriven Fwk:
+
+Data is separated and stored in the third party resource.
+
+
+Keyword Driven Fwk:
+
+InputData :selenium
+Locator :ID
+Locator property:uname
+Action:findElement
+Keyword : click
+
+public void fillTextbox(String locator,String locatorvalue,String inputdata,WebDriver driver)
+{
+
+	 
+		
+	
+}
+
+
+if(keyword.equals("enterData))
+{
+
+	fillTextbox("xpath","uname","selenium",driver);
+}
+
+
+

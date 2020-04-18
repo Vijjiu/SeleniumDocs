@@ -1,0 +1,50 @@
+REST Theory..->http://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html
+CRUD Operations
+REST Operations
+POSTMAN -> Execute http://sqlrest.sourceforge.net/5-minutes-guide.htm
+SOAPUI ->Execute http://sqlrest.sourceforge.net/5-minutes-guide.htm
+Writing prgrams using REST Assured API
+
+
+Dice
+Indeed
+CareerBuilder
+Monster
+Naukri
+upwork.com->freelancer contract jobs
+techfetch
+linked-in
+glassdoor
+stackoverflow
+desi-opt
+sulekha
+google
+ZipRecruiter
+
+Attend interviews..10 
+
+50 Q's
+
+Apply the jobs not specific the location
+ 
+
+
+
+
+
+REST Services
+SElenium
+
+
+
+
+
+
+
+
+
+
+
+
+
+

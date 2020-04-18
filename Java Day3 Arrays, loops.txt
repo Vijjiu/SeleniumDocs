@@ -1,0 +1,148 @@
+Keywords are reserved in java we cannot use for variable names/method names/classnames.
+Example for keywords -> new,public,static,void
+
+Arrays,if/Else,For & While Loop:
+
+Array is an data structure in java mainly useful to store similar data type values.
+
+int i1=10;
+int i2=20;
+int i3=30;
+
+
+
+
+int i10=100;
+
+Store 10 int values.Solution: create an array
+
+Syntax of an Array:
+-------------------------
+Datatype arrayname[] = new Datatype[size];
+
+Whenever we have akeyword called new , the memory will be reserved in heap during
+execution time.
+
+int rollno[] = new int[10];
+
+rollno[0] =1;  //[] - square brackets, 0 is index ,value is 1
+
+rollno[1] =2;  // ** index starts from zero
+
+rollno[2] =3;
+
+
+rollno[3] =4;
+
+
+rollno[4] =5;
+
+
+rollno[5] =6;
+
+
+
+rollno[9]=10;
+
+
+Points to be noted:
+-------------------
+The first line of the statement in any java program, if it is created under a package then we have to mention as 'package packagename'.
+
+Ex: package javaprograms;
+
+2. java.lang.ArrayIndexOutOfBoundsException: 6
+When the user is trying to access the value outside the range.
+These Exceptions are run time exceptions.
+These are mainly due to programmatical mistakes.
+
+
+loops:
+----------
+for,while,do-while
+
+loops will helps us to perform an activity for specified number of times.
+
+Suppose i want to print selenium 10 times.
+
+syso("selenium");
+syso("selenium");
+syso("selenium");
+syso("selenium");
+syso("selenium");
+syso("selenium");
+syso("selenium");
+syso("selenium");
+syso("selenium");
+
+Syntax:
+---------
+
+	for(intialization;conditon;increment/decrement)
+	{
+		//block of statement
+
+	}
+
+
+	for(int i=0; i<10;i++)  //i = i+1   i = 0+1
+	{
+		syso("selenium");
+	}
+
+0,1,2,3,4,5,6,7,8,9
+
+
+Syntax for while loop:
+-----------------------
+       intializaion;
+
+	while(condition)
+	{
+		//block of statements
+
+		increment/decrement;
+	}
+
+Syntax of do-while loop:
+----------------------------
+intialization;
+
+do{
+
+
+   //block of statements
+
+   increment/decrement;
+
+}while(condition);
+
+Diff between while and do- while is even if the condition is false it executes the do-while loop once.
+---------------------------------------------------------------------------------------------------------------
+
+
+
+Conditional statements:
+---------------------
+if else..
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

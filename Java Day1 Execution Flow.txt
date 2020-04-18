@@ -1,0 +1,122 @@
+Java is a programming language owned by oracle.
+Java has been developed by a person named James Gosling in the year 1995.
+Java is an open source.
+Java supports object oriented programming concepts.
+Java is platform independent.
+Java is case sensitive. There is a difference lowercase and uppercase characters.
+
+//This is my first java program
+public class HelloWorld
+{
+
+	public static void main(String args[])//main is a method
+	{
+		System.out.println("Hello World");
+	}
+}
+
+{} - Curly braces
+[]-  Square Brackets
+()-  paranthesis
+;-   Semi colon
+"-   Double Quotation
+' -  Single Quotation
+//-  Forward Slash for Comments
+
+Class name is -> HelloWorld
+Class Contains one main method
+
+helloworld is different from HelloWorld why?? Java is case Sensitive
+
+Points to be Noted:
+---------------------
+1. The Programm name should be given as same name as class Name.
+   ex: HelloWorld.java
+
+2. java is the extension
+
+3. Java Execution Flow->It has two steps....
+
+
+  a. Compilation-> Checks the syntax errors
+
+	Goto the command line and type-> 
+
+       input -> HelloWorld.java
+  
+       javac HelloWorld.java
+
+		(or)
+
+        "c:\Program Files\Java\jdk1.8.0_25\bin\javac" HelloWorld.java
+
+
+        Ouput -> HelloWorld.class
+
+
+
+  b. Execution->JVM Java virtual machine is responsible for storing
+     variables and objects in the memory. JVM is an interpreter(executes the code line-by-line)
+     JVM converts the .class file into machine level language.
+
+
+       input -> HelloWorld.class
+
+       java HelloWorld
+
+       output->Prints "Hello World" in the console.
+
+4. Java is platform independent-->".class" generated during compilation phase
+works on all the platforms without any modifications. So, java is platform independent.
+
+Ex: Compile a program on windows, and copy the .class to linux and execute the program on linux using
+jvm.
+
+
+Compile once and execute on any platform specific jvm for the operating system.
+----------------------------------------------------------------------------------------------------
+
+
+sudheer.h2kinfosys@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

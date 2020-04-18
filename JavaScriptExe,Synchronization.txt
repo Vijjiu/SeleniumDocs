@@ -1,0 +1,166 @@
+JavascriptExecutor->
+-------------------
+By the name implies we are going to execute the Javascript in selenium webdriver scripts.
+
+Javascript-> Its an scripting language mainly useful to perform client side validation.
+Before it sends the request the server it will perform validations.
+
+
+document.title          -> returns String
+
+
+document.getElementById('u_0_1')-> returns WebElement
+
+
+public Object execute(String jsecode)
+
+In java Object is the superclass. A Superclass can hold any object.
+Its a string or weblement.
+
+
+Takesscreeshot and WebDriver are interfaces implemented by Browser classes
+
+JavascriptExecutor is an interface implemented by Browser classes.
+Interfaces contains 100% abstract methods.
+
+
+	WebDriver driver = new FirefoxDriver();
+	driver.get("http://www.Facebook.com");
+	JavascriptExecutor jse =(JavascriptExecutor) driver;
+
+TakesScreenshot is an interface implemented by FirefoxDriver.
+---------------
+
+  TakesScreenshot tsh = new FirefoxDriver();
+
+-----------------------------------------------------------------------------------------
+Synchronization:
+-----------------
+
+The communication between Selenium Scripts and AUT are known as Synchronization
+
+AUT- Application under test. The appln provided to the tester to do testing.
+
+
+We should insert the waits to communicate.
+
+They are two types of wait.
+
+1. Unconditional Wait
+	Thread.sleep(5000);1 sec = 1000ms means 5000ms is 5 sec
+Thread is a class sleep is a static method.
+Thread is available in the package java.lang.
+
+
+
+2. conditional Wait
+
+        implicitWait
+        -------------- 
+                   driver.manage().timesouts().implicitlyWait(10,TimeUnit.SECONDS);
+
+
+a. implicitWait is applicable for all the findElement and findElements statements in the selenium script
+b. NoSuchElementException throws if it unable to identify the element after specified interval of time.
+c. We can pass the time in SECOdNS,MILLISECONDS,DAYS AND HOURS.
+
+1. If the Element is displayed implicitwait is not in action.
+2. If the element is displayed with in threshold implicitwait waits for particular time and 
+control goes to next step.
+3. If the element is not displayed within threshold it wait for 10 sec
+and stop the execution 
+
+
+
+
+Exception in thread "main" org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"abc"}
+Command duration or timeout: 10.09 seconds
+
+Exception in thread "main" org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"abc"}
+Command duration or timeout: 25 milliseconds
+
+        Logic:
+
+                int time=0
+
+		while(time<10000)
+		{
+			try{
+				driver.findElement(By.id("u_0"));
+				exit();
+			}
+			catch(Exception e)
+			{
+				time=time+500;
+				Thread.sleep(time);
+			}
+		}
+
+
+
+
+ ExplicitWait:
+ -----------------
+	a. ExplicitWait is for a particular object.Clicking on the links opens a new page. And if you want to confirm the page is opened successfuly we can put waits. To confirm page is opened successfully we can use explicitwait.
+	 
+	b. TimeoutException:throws if it unable to identify the element after specified interval of time.
+	c. We can pass the time only in SECONdS
+
+
+		WebDriverWait wait = new WebDriver(driver,10);
+
+           wait for tile
+			wait.until(ExpectedCondition.titleContains(driver.getTitle(),"Google"));			
+
+
+	   wait for WebElement(textbox)
+	   wait for Text
+
+
+	WebDriverWait is the class useful to implement explicitWait.
+
+
+ExplicitWait to handle ajax applications. AJAX stands for asynchronous javascript and xml.
+
+
+
+
+
+
+1. Select
+2. WebDriverWait
+3. Browser Classes
+
+
+
+
+
+Thread.sleep(2000)
+findElement
+Thread.sleep(2000)
+findElement
+Thread.sleep(2000)
+findElement
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

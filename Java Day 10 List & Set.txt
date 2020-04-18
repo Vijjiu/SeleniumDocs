@@ -1,0 +1,81 @@
+List & Set
+-------------
+
+Array is a data structure to store values of similar data types.
+Syntax:
+
+          Datatype arrayname[] = new Datatype[size];
+
+
+List & Set are also data structures to store objects belongs to same class.
+
+
+	String s1 = new String("selenium");
+
+ int is a datatype. Integer i= new Integer(5);
+
+In java for every datatype they have provided classes. These classes are known as wrapper classes.
+
+Wrapper Classes are as follows: Integer,Short,Byte,Long,Float,Double,Character,Boolean available in the java.lang
+
+			Integer i = new Integer(5);
+
+java.util
+
+	int a[]={1,2,4,5,6};  a[0]
+
+List and Set are the data structures useful to store multiple objects.
+
+Diff between List & Set
+------------------------
+
+List is the datastructure useful to store duplicate objects.
+String s1 = new String("abc");
+String s2 = new String ("abc");
+
+List is index based. We can access the objects using index.--> L1.get(0)
+List is an interface implemented by classes LinkedList,Vector and ArrayList.
+
+1. Adding objects to list
+2. Retrive a single object(Required in Selenium)get()
+3. Size of the list->size()
+4. Using for loop (Required in Selenium )
+
+
+
+Set is the datastructure useful to store unique objects.
+Set is not an index based. It doesnt have get method available in set.
+Set is an interface implemented by classes Hashset,Treeset and LinkedHashSet
+------------------------------------------------------------------------------------------
+
+List & Set are interfaces they are availble in the package java.util
+LinkedList,ArrayList,Vector are classes which are implementing List
+HashSet,TreeSet,LinkedHashSet are classes which are implementing Set.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

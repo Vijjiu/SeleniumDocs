@@ -1,0 +1,49 @@
+
+Data Driven Fwk:
+
+Third party resource file
+
+xls- Java Excel API
+xlsx-> Apache POI
+properties->Java API
+database->Java API
+xml->XmlReader Java API SAX/DOM
+json->Java API
+
+Read the file and store the data in an 2D Array:
+
+@DataProvier we need to pass this 2D Array to it.
+
+
+DataBases -> 
+These are 
+MYSQL,Oracle-> tABLES. Relational Databases
+
+Database->
+		Multiple Tables
+			Table1->Rows and Columns->Data
+
+
+MONGO,NOSQL->dATA WILL NOT BE STORED IN tABLES. Non Relational Databases
+
+
+Flight From To StartDate EndData Name DOB PRice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

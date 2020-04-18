@@ -1,0 +1,92 @@
+
+Java
+
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+Eclipse
+http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygenr
+
+
+
+Java Installation:
+-------------------
+To find the bit version
+Right click -> My Computer->Properties check for bit version.
+
+
+1. Java should be installed in the computer.
+
+2. Verify whether java is installed in the computer.
+
+   Open cmd-> type 'java -version'
+
+   Latest Version is 1.8.
+
+3. To install java you have to Search for 'jdk 1.8 download' in google.
+
+To find the operating system bit version. Navigate to Control Panel\System and Security\System
+
+
+4. Link for downloading java
+   http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+   Accept License agreement ->jdk-8u65-windows-x64.exe  for 64 bit operating system
+                              jdk-8u65-windows-i586.exe for 32 bit operating system.
+                  
+5. Execute step 2 to verify the java is installed in the laptop.
+
+6. "C:\Program Files\Java" contains 2 folders with names jdk & jre.
+
+  jdk stands for - java development kit
+  jre- java runtime environment.
+--------------------------------------------------------------------------------------------------------
+
+Eclipse:
+----------
+Eclipse is an IDE -Integrated Dev Env useful for writing java programs.
+
+Url for installation of Eclipse
+--------------------------------
+
+http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr
+
+for 64 bit:
+-----------
+https://eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-jee-mars-1-win32-x86_64.zip
+
+http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/R/eclipse-java-mars-R-win32-x86_64.zip&mirror_id=466
+
+click on Windows-64 bit.
+mars is the latest version of Eclipse.
+
+Downloads a zip folder. Then unzip the folder using winzip/pkzip sofware then click on eclipse.exe to launch eclipse.
+
+-----------------------------------------------------------------------------------------------------------
+
+Latest version of Firefox -> https://www.mozilla.org/en-US/firefox/new/?utm_source=google&utm_medium=paidsearch&utm_campaign=sem2015Q2&utm_term=free%20web%20browser%20downloads&utm_content={meta%20data}
+
+Latest version of Chrome->https://support.google.com/chrome/answer/95346?hl=en
+
+Html -> www.w3schools.com
+
+-------------------------------------------------------------------------------------------------------------
+
+Execute Selenium Programs on FF,IE,Chrome
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

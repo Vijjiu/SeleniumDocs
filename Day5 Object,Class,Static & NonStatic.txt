@@ -1,0 +1,149 @@
+JAva supports object oriented programming concepts.
+
+What is object??
+Object is an real world entity which has state and behaviour.
+
+Car Object:
+----------------
+	color,weight - state(Variables)
+	engine(),wheeling(),steering()- behaviour(Methods)
+
+Bird
+animal
+Bicyle
+Student
+	rollno,marks,name-state
+	play(),read()- behaviour
+
+Vehicle
+
+Customer
+	name,accno,custid,dob,age,address
+	withdraw(),checkbalance(),deposit(),transfer()
+
+So, in java programs, state means variables and behaviour means methods.
+
+int i =10;
+
+public class Car
+{
+
+        color,weight - state(Variables)
+	engine(),wheeling(),steering()- behaviour(Methods)
+
+	//Syntax for creating an object
+	Car maruthi = new Car();
+
+	Car bmw = new Car();
+
+
+
+
+}
+
+Student Object:
+-------------------
+
+State:name,rollno,age
+Behaviour:play(),read()
+
+public class Student
+{
+
+State:name,rollno,age
+Behaviour:play(),read()
+public static schoolName="h2k";
+
+main()
+{
+	Student s1 = new Student();
+	s1.rollno=1;
+
+	Student s2 = new Student();
+	s2.rollno=2;
+
+	syso(Student.schoolName);
+
+
+}
+
+}
+ 
+Constructor:
+--------------
+A Constructor is a special method which is having same name as className but it doesnt have
+any return value.
+
+methods have parantheis()
+
+		
+public class Student
+{
+
+
+	Student() // constructor
+	{
+
+	}
+
+
+}
+
+1. Constructors are invoked during the creation of object.
+
+2. Constrcutors are helpful for intialize the variables.
+
+3. constructor which are having paramters are known as paramterized constructor.
+   Student s1 = new Student(1,'A',"sudheer");	 
+
+4. A constructor which are not having paramters are known as default constructor.
+
+
+this:
+-----------
+
+this is a keyword helpful to distinguish the local and global variables.
+-----------------------------------------------------------------
+Student(int rollno,char standard,String name)//param constructor
+	{
+		this.rollno = rollno;
+		this.standard = standard;
+		this.name= name;
+		
+	}
+	
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+
+
+
+driver.switchTo().frame(int index);
+
+driver.switchTo().alert();
+
+driver.switchTo().window(String windowname);
+
+
+Handling Windows/Browsers:
+---------------------------
+When ever we try to open the page the focus is on the parent page(loginPage).
+If you want to change the focus from parent window to child window we have to use
+the following method
+
+
+driver.switchTo().window(String WindowName);
+
+
+Logic:
+------------
+
+driver.get("http://www.facebook.com");
+
+driver.findElement(By.linkText("Data Policy")).click();
+
+String parent= driver.getWindowHandle();//gives the window name of the browser which has focus.(parent page)
+
+Set<String> wlist=driver.getWindowHandles();	// wlist contains parent and child
+
+
+//Enhanced for loop or for each
+for(String s: wlist)
+{
+
+	if(!(s.equals(parent)))                       //(s!=parent)  )
+	{
+		driver.switchTo().window(s);
+		syso(driver.getTitle()); // Data policy
+		if(driver.getTitle().equals("Data Policy"))
+		{
+
+
+		}
+		else if(driver.getTitle().equals("Sign up"))
+		{
+
+
+		}
+		
+
+	}
+
+}
+
+
+Handling mouse actions in Selenium WebDriver:
+---------------------------------------------
+
+Actions is the class useful for performing the mouse Actions.
+
+
+Actions action= new Actions(WebDriver);
+
+moveToElement(WebElement) is the method to perform mouse Actions
+
+
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+Username <input id="username" name="username" class="textboxcolor" type="text">
+
+
+properties
+id
+name
+class
+type
+
+input is tagName
+
+Password <input id="pass word" name="password" type="password">
+
+Submit <input name="login" value="Submit" id="login" type="submit">
+
+
+FirstName : <input aria-describedby="js_1" aria-haspopup="true" aria-owns="js_0" 
+
+class="inputtext _58mg _5dba  _2ph-" 
+
+
+data-type="text"  aria-required="1" placeholder=""  aria-label="First name" type="text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Textbox1 <input id="text1" .. />  index 1
+
+  Textbox2 <input id="text1" .. />   index 2
+
+
+ Textbox3 <input id="text1" .. />  index 3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

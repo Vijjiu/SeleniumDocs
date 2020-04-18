@@ -1,0 +1,369 @@
+Testng: NG refer to next generation
+------------------------------------
+1. Testng & Junit are both Java Frameworks used by developers to perform unit testing of their
+code.
+2. Junit is subset of Testng. Testng is so powerful due to its advanced features which are as below
+
+		a. Grouping of testcases- Group=Sanity 10testcases,Group=Regression 100-Done
+		b. Paramterization of testcases
+		c. Parlell execution of testcases
+		d. Passing multiple values to the testcases using Excel-Data Driven FWK.
+3. Testng generates very good html reports which are useful to showcase to the stake holders.
+
+	Once execution is done select the project and Press f5 to the see the test-output folder.
+	a. index.html
+	b. emailable-report.html
+
+
+4. TEstng doesnt have main method
+5. Testng has annotations. Annotations always starts with @ symbol.
+6. Testng executes the @Test methods in alphabetical order.
+
+For all the testng documentation pls refer to this link ->http://testng.org/doc/documentation-main.html
+
+--------------------------------------------------------------------------------------------------
+
+1. Understand the application.
+2. Get thorough knowledge of domain. HealthCare - HIPAA,Insurance-Accord,XML-OTA
+3. Understand the manual testcases
+4. Pick few testcase and execute manual testcases
+5. Ask for more information.
+6. List the testcases how many we can automate. Provide infromation for the testcases why we cannot automate.
+7. We have to automate testcases.
+
+Manual TC_001: Verify the title of the page
+-----------
+TestSteps:
+-----------
+1. Open Firefox Browser.
+2. Enter the url.
+3. Check the title
+
+Expected Result:
+-----------------
+Verify the title of the page should be displayed as 'Google'.
+
+Actual Result:
+-----------------
+The tilte of the page is displayed as 'Google'.
+
+Status:
+--------
+Pass
+
+TestData:
+-----------
+http://www.google.com
+
+Automate the testcase TC_001
+--------------------------------
+
+public class GoogleWebApp
+{
+		@Test
+		public void verifyTitle()
+		{
+			
+			WebDriver driver = new FirefoxDriver(); //1. Open Firefox Browser.
+			driver.get("http://www.google.com");   //2. Enter the url.
+			String expected="Google";				3. Check the title
+			String actual = driver.getTitle();
+			Assert.assertEquals(actual,expected);
+		}
+}
+		
+
+
+@Test is an annotation. So, when we try to execut the program as testng. it will execute all the
+@Test annotation methods.
+
+
+@Test Attributes:
+---------------------
+@Test(priority=value)
+
+@Test(description="testcase description")
+
+@Test(priority=value,description="testcase description",enabled=false)
+
+
+@Test (dependsOnMethods={"Login"})- If the dependsOnMethods is failed the method will be skipped.
+
+@Test(dependsOnMethods={"search"},alwaysRun=true)
+-------------------------------------------------------------------------------------------------------
+XML is an extensible markup language similar to html, but
+xml is mainly useful to write user defined tags.
+html is mainly useful to use predefined tags.
+
+Website -> w3schools.com 
+
+
+We will write an xml file to invoke the testng program. 
+--------------------------------------------------------------
+<suite name="GoogleSuite">
+<test name="SanityTests">
+	<classes>
+
+		<class name="packagename.classname">
+		</class>
+	</classes>
+</test>
+</suite>
+
+
+To see more logs we have to set the suite level attributes verbose=5.. values range from 1 to 10.
+
+--------------------------------------------------------------------------------------------------------------
+
+How do we manage pre-conditions and post-conditions for all the @Test methods.
+
+@BeforeClass , @AfterClass
+
+login->search->searchPage ->validate->logout
+
+public class ebayApp
+{
+	@AfterClass
+	public void Logout()
+	{
+		syso(" in logout");
+
+	}
+
+	@Beforeclass
+	public void login()
+	{
+
+		syso("in login");
+	}
+	@Test
+	public void search()
+	{
+
+	}
+	@Test
+	public void validateSearchDetails()
+	{
+
+
+	}
+	@Test
+	public void searchPageTitle()
+	{
+
+	}
+}
+----------------------------------------------------------------------------------------
+
+How do we manage pre-conditions and post-conditions for each @Test methods.
+
+@BeforeMethod,@AfterMethod
+
+Execution Order->
+
+	login-search->logout
+	login -> searchPageTitle->logout
+	login-validateSearchDetails->logout
+
+
+public class ebayApp
+{
+	@AfterMethod
+	public void Logout()
+	{
+		syso(" in logout");
+
+	}
+
+	@BeforeMethod
+	public void login()
+	{
+
+		syso("in login");
+	}
+	@Test
+	public void search()
+	{
+
+	}
+	@Test
+	public void validateSearchDetails()
+	{
+
+
+	}
+	@Test
+	public void searchPageTitle()
+	{
+
+	}
+} 
+----------------------------------------------------------------------------------------------------------------
+Expertise in API Testing. API(Application programming interface)
+
+	public class MathFunctions
+	{
+
+
+		public boolean void verifyValue(int i)
+		{	
+
+			boolean result;	
+			if(i<10)
+			{
+				syso("i is smaller than 10");
+				result=true;
+			}
+			else
+			{
+
+				syso("i is greater than 10");
+				result=false;
+
+			}	
+
+		}
+	}
+
+BVA - i <10,i>10, i==10    9 , 11,10
+
+
+-------------------------------------------------------------------------------------------------------------
+
+Grouping of testcases in Testng:
+Currently most of the companies are using agile methodology.
+You will getting build everyday.We will perform sanity Testing.
+
+@Test(priority=1)
+
+groups is an attribute for @Test annotation
+
+
+@Test(groups={"sanity","regression"})
+public void Login()
+{
+
+
+
+}
+@Test(groups={"regression"})
+public void VerifyLinkText()
+{
+
+
+
+}
+
+@Test(groups={"sanity","regression"})
+public void Logout()
+{
+
+	
+
+}
+------------------------------------------------------------------------------------------------------------------
+How do we invoke a single method via xml
+
+<class name="packagename.classname">
+      <methods>
+	<include name="methodname" />
+      </methods>
+</class>
+
+---------------------------------------------------------------------------------------------------------------
+
+They are totally 4 automation frameworks which are available.
+
+1. Modular  Framework:Methods are mainly to perform some functionality. Reusability,maintainablity and reduce
+duplication of code,save effort and time.
+
+
+
+		public class eBay
+		{
+			LoginPage page = new LoginPage();
+
+			public void TC_001()
+			{
+				 
+				page.enterLoginDetails("sudheer","h2k");
+				 
+				/////
+
+			}
+			public void TC_002()
+			{
+				 
+				page.enterLoginDetails("sudheer","h2k");
+				 
+				 
+
+
+			}
+			public void TC_003()
+			{
+				 
+				page.enterLoginDetails("sudheer","h2k");
+				 
+				
+				 
+			}
+		}
+
+
+public class LoginPage
+{
+
+	public void enterLoginDetails(String username,String password)
+	{
+		                driver.findElement(By.id("username")).sendKeys(username));
+				driver.findElement(By.id("password")).sendKeys(password));
+				driver.findElement(By.id("login")).click();
+
+	}
+}
+
+
+
+
+
+
+}
+			
+
+2. Data Driven->Reading the data from an external resource(excel,xml,database) and pass the multiple sets of 
+data to the testcases.
+@Dataprovider
+
+
+3. Keyword->
+We will try to maintain the keywords and map the keywords to the methods. 
+Invoke the methods during runtime using reflection api.
+
+
+4. Hybrid->
+
+Combination of any of the above frameworks is known as hybrid framework
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

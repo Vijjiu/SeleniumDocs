@@ -1,0 +1,16 @@
+
+
+ Build Automation tools
+
+          ant-- invoking testng programs from ant
+   	  maven--invoking testng program from ant
+ 
+ Continous Integration tools
+          Jenkins- invoking the testng program from a job which execute testcases
+	  Hudson
+
+
+ Configuration management tool- store the code in a repository
+
+         github- Maintain the code in a repository 
+         SVN   

@@ -1,0 +1,12 @@
+1. Count number of items which are having String jeans-working- CSS Working.. 
+2. Rate low to high - Working.. Not Working
+3. Customers Top Rated- Stale Element Wait.. & Java Number Format Exception
+
+
+
+New Arrivals-InProgress
+
+
+AutoSuggest -Assignment
+
+

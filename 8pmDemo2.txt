@@ -1,0 +1,78 @@
+Finding the properties/Attributes for the elements displayed in the html page
+
+Yes it is same for every web application.
+
+Is this activity needs to be performed for manual testing??No
+Yes in the case of automation.
+
+
+textbox -> enter the text properties 
+button -> click  properties
+radio - > click properties
+hyperlink -> click
+listbox -> click
+mouse hover
+drag and drop
+
+5 Textbox 
+properties
+id="xyz" name="xyz" classname="xyz" position =1
+id="xyz1" name="xyz" classname="xyz" position =2
+id="xyz2" name="xyz" classname="xyz" position =3
+id="xyz3" name="xyz" classname="xyz" position=4
+id="xyz4" name="xyz" classname="xyz" position=5
+
+
+<input class="inputtext _58mg _5dba _2ph-" data-type="text" name="firstname" aria-required="1" placeholder="" id="u_0_1" aria-label="First name" tabindex="0" type="text">
+
+
+<input class="inputtext _58mg _5dba _2ph-" data-type="text" name="firstname" aria-required="1" placeholder="" id="u_0_1" aria-label="First name" aria-describedby="js_2t" type="text">
+
+
+<a href="">Click</a>
+tagName: a stands for anchor tag useful for designing hyper link
+
+
+tagName:input
+
+class
+ 
+name
+ 
+id
+ 
+type
+
+
+input
+a
+h1 - heading
+h2
+h3
+h4
+h5
+h6
+select - listbox
+div/span - text
+table
+frames
+iframes
+
+
+Mon,Wed,Fri
+
+Css,html doubts
+
+
+
+
+
+
+
+
+
+
+
+
+
+

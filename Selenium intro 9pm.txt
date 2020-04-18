@@ -1,0 +1,69 @@
+Selenium IDE->9pm to 10 pm EST
+
+Installation:
+Java
+Eclipse
+Selenium
+Testng
+
+9pm EST from monday to Friday
+Next week -> 
+Feb 20th - Mar 31st
+
+Dropbox link -> Which has all videos..
+
+how many modules/applications are given for testing practice?
+retailmenot.com
+openmrs.org
+indeed.com
+newdours demo
+schoolbucks.com
+yahoo.com
+
+JAva is a programming language- Mandatory
+Javascript is a scripting language.. -> basic knowledge
+
+Course : 
+
+ 40 days
+
+  Java Topics -> 2 weeks
+ 
+  Selenium Topics -> 2 weeks
+
+  JAva Topics-> 1 week
+
+ 1 - Mock Interview
+
+ Selenium Topics->1 week
+  
+
+
+ Testng is a subset of Junit..-> 1 week
+
+1 - Mock Interview
+ 
+ Page Object Model With live Appn + doubts -> 1week
+
+
+
+
+I dont have any technical experience
+Java Basics:
+HelloWorld
+Executing the Programs from command line
+Installation of Eclipse
+Datatypes
+Arrays
+loops
+conditional statments
+Objects
+Class
+Methods
+Static Vs Non Static
+Constructors
+Inheritance
+Interfaces
+Abstract class
+Exceptions
+Polymorphism

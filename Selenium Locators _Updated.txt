@@ -1,0 +1,475 @@
+webDriver:
+-----------
+WebDriver is an automation tool useful to perform Cross Browser Testing.
+Verifying the AUT(appl under test) against multiple browsers.
+Limitation / Drawback -->WebDriver doesnt help us in automating Desktop based application. notepad.exe
+
+Selenium WebDriver API (Application Programming Interface)
+------------------------------------------------------------
+
+API Contains classes,methods,interfaces. All these are bundled and provided to us in jar file format.
+
+A jar file named selenium-java.2.46.zip downloaded and added the selenium-java.2.46.jar to the build path of the project.
+Apart from that we have to add the jars available under lib directory also which are required for execution.
+
+Selenium API ->http://selenium.googlecode.com/git/docs/api/java/index.html
+
+Package ->org.openqa.selenium
+
+Compatibility-> the selenium-java-2.46.jar should be compatible with latest version of ff 38.0
+
+
+1. Downloading Older Version of FF: Firefox 55 version
+--------------------------------------------------------
+ 
+Control panel ->uninstall firefox
+
+Access this link for all the releases of firefox
+32 bit -https://ftp.mozilla.org/pub/firefox/releases/55.0/win32/en-US/
+64 bit - https://ftp.mozilla.org/pub/firefox/releases/55.0/win64/en-US/
+Once installation is done.. we should immediately stop the updates..
+In Menu bar
+Tools ->Options->Advanced
+Click on Update->Select Never Check for Updates
+
+
+2. Downloading GeckoDriver for Firefox:
+--------------------------------------
+https://github.com/mozilla/geckodriver/releases
+Download the zip and unzip it.
+Copy the executable file into the project
+
+TC_001:Verifying the title of page
+------------------------------------
+1. Open FF.
+2. Enter the url http://www.google.com
+3. Check the title
+
+Expected Result:
+-------------
+"Google"
+
+Actual Result:
+----------------
+"Google is displayed"
+
+Result:
+----------
+Pass
+
+
+FirefoxDriver is a class implementing an WebDriver interface.
+
+ WebDriver driver = new FirefoxDriver(); //Open FF
+
+1. In Firefox we have to download the plugins
+
+     Firebug->https://addons.mozilla.org/en-US/firefox/addon/firebug/
+
+     Firepath->https://addons.mozilla.org/en-us/firefox/addon/firepath/
+
+     <input id="username" class="textboxcolor" type="text" name="username">
+
+
+    Properties/Attributes for Username textbox are -> id,class,type,name
+    TagName-> input
+
+
+
+    ---->Identification and Action
+
+         Identify -> using properties
+
+        Action ->    sendKeys()- textbox
+                     click() - hyperlink,radio,checkbox,listbox,button
+
+
+
+	WebElement e = driver.findElement(By.id("username"));//Identify
+        e.sendKeys("H2kinfosys");//Action
+             
+Identification of Objects/WebElements/HTML Components can be done in 8 ways: (or) Locators:
+----------------------------------------------------------------------------------------------------
+1. id - driver.findElement(By.id("usernmae"))-  
+
+2. name- driver.findElement(By.name("username"));
+      driver.findElement(By.name("password")); -  
+
+
+3. className- - 
+          class="textboxcolor"  driver.findElement(By.className("textboxcolor"));
+          class="inputtext _58mg _5dba _2ph-"  //driver.findElement(By.className
+("inputtext _58mg _5dba _2ph-"));  InvalidSelectorException:Compound class names not supported.
+ 
+
+4. tagName- 
+
+	tagName="input"
+	
+	driver.findElement(By.tagName("input"));//Select the username
+
+5. linkText(hyperlink)-  
+
+	WebElement e =driver.findElement(By.linkText("Sign In"))
+        e.click();
+
+6. partialLinkText(hyperlink) for dynamic links where the text is keep on changing. So we use the static part.
+	WebElement e =driver.findElement(By.linkText("Sign"))
+        e.click();
+		
+	WebElement e =driver.findElement(By.linkText("In"))
+        e.click();- Done
+
+Click Here ABC
+
+8. cssSelector
+
+
+7. xpath-> html path -
+
+   xpath - > xml path
+             hmtl path
+
+ 
+
+Difference between close() and quit()
+----------------------------------------
+driver.close()-> closes the browser which has focus Ex:LoginPage.html
+driver.quit()->closes all the browser opened by webdriver Ex: LoginPage,Singin
+
+
+
+it will select both
+or first one
+or second one
+
+findElement method is always selects the first one
+in the list of matching properties..
+
+if two or more elements are having same id
+if two or more elements are having same name
+if two or more elements are having same classname
+
+if two or more elements are having same tagname
+
+
+--------------------------------------------------------------------------
+ 
+7. xpath-> html path -
+
+   xpath - > xml path
+             hmtl path
+
+
+html
++------body
+         +------ table
+                  +----------tbody
+                              +------tr[1]
+                                      +-----------td[1]
+                                                   +------------sudheer.
+/html/body/table/tbody/tr[1]/td[1]/sudheer
+
+
+	
+table			
+				
+tr[1]	td	td	td	
+tr[2]	td	td	td(sudheer)	/html/body/table/tr[2]/td[3]
+tr[3]	td	td	td	
+tr	td	td	td	
+tr	td	td	td	/html/body/table/tr[5]/td[1]
+Absolute Xpath->        Starts from root node called 'html' tag. It always starts with single forward slash.
+
+			/html/body/table/tbody/tr[1]/td[2]/input
+			/html/body/table/tbody/tr[1]/td[2]/input
+
+Relative Xpath ->       Starts from any where in the path. It starts with two forward slashes.
+
+                       //body/table/tbody/tr[1]/td[2]/input
+			//table/tbody/tr[1]/td[2]/input
+			//table[@name='cart']/tbody/tr[1]/td[2]/input
+			//tbody/tr[1]/td[2]/input
+			//tr[@id='item1']/td[2]/input
+			//input[@id='username']
+			//input[@class='textboxcolor']
+			//*[@id='username']   (* means any thing)
+			 
+			id('username')(only for id)
+
+			/html//table(subchild)
+
+			/hmtl/body (direct child)
+
+			//*[@id] [Identify the input element which are having ID attribute]
+
+Attribute Selector
+--------------------
+//tagName[@attrname='attrvalue']
+Ex: //table[@name='cart']
+//a[@title='Sign up for Title']
+
+//table[@border='1']
+
+ID Selector:(only for ID)
+-------------------
+id('idattrvalue')
+id('username')
+()-paranthesis
+
+
+Xpath Indexing:
+------------------------
+Type 1 : //input[@name='chk'][2]
+Index starts from one.
+
+Type 2: Apply Paranthesis Facebook
+
+(//span[@class='mtl _3ma _6p _6s _6v'])[2]
+Suppose in a webpage in which i have multiple checkboxes which are having same name.
+<input tye="checkbox" name="chk">
+<input tye="checkbox" name="chk">
+<input tye="checkbox" name="chk">
+<input tye="checkbox" name="chk">
+Ex: MultipleCheckbox.htm
+//input[@name='chk'] It will select all the check boxes. We have to apply indexing.
+ driver.findElement(By.xpath("//input[@name='chk']")).click();
+
+Xpath text(),contains(),starts-with() Function:
+------------------------------------------------
+//span[text()=" Share what's new "]  //Exact Text
+//span[contains(text(),'Share')]     //Part of Text or Substring of Text
+(//h2[contains(text(),'with')])[1]
+//div[contains(text(),'share')]
+WebElement e = driver.findElement(By.xpath('//span[contains(text(),'Share')]'));
+String actual= e.getText();
+String expected='';
+if(actual.equals(expected))
+{
+    syso(Its working as expected);
+}
+Handling Dynamic Elements in xpath:
+----------------------------------------
+Example ->https://register.rediff.com/register/register.php?FormName=user_details
+//input[starts-with(@name,'confirm')]
+<input id="text-34567">
+//input[@id='text-34567'] // fail
+//input[starts-with(@id,'text-')]
+//input[starts-with(@id,'pass')]
+Xpath -text(),contains(),starts-with()
+//Reading the value from the exel
+String str = sheet.getCell(col,row).getContents();
+driver.findElement(By.xpath("")).sendKeys(str);
+
+
+Xpath Axes Locators:
+-----------------------
+https://www.w3schools.com/xml/xpath_axes.asp
+ancestor- select parent or grand parent
+following-sibling- Which follows
+preceding-sibling - Which precedes
+descendant - Child/subChild
+parent - Select Immediate PArent
+child - Select immeidate Child
+following: Select all the matching nodes which are following
+preceding:Select all the matching nodes which are preceding
+
+http://www.deal4loans.com/home-loans.php
+//a[text()='LIC Housing Finance']/ancestor::td/following-sibling::td[4]/descendant::a
+//a[text()='Apply']/ancestor::td/preceding-sibling::td[4]/descendant::a[text()='LIC Housing Finance']
+
+Click on apply button in the first row
+----------------------------------------
+//span[text()='State Bank of India (SBI)']/ancestor::td/following-sibling::td[3]
+//span[text()='State Bank of India (SBI)']/ancestor::td/following-sibling::td[3]
+
+
+Retreving the text 
+---------------------
+//img[@src='images/home-loan-apply-new-btn-new.png']/ancestor::td/preceding-sibling::td[3]/span[text()='State Bank of India (SBI)']
+
+ 
+
+WebElement e = driver.findElement(By.xpath("//img[@src='images/home-loan-apply-new-btn-new.png']/ancestor::td/preceding-sibling::td[3]/span[text()='State Bank of India (SBI)']"));
+
+syso(e.getText());
+
+Left to Right
+//a[text()='HDFC Ltd']/ancestor::td/following-sibling::td[4]/descendant::a
+
+Right to Left
+//a[text()='Apply']/ancestor::td/preceding-sibling::td[4]/descendant::a[text()='HDFC Ltd']
+
+//span[text()='HDFC Ltd']/ancestor::td/following-sibling::td[3]/a/div
+
+Direct Child and SubChild:
+---------------------------
+                   /html/body in xpath -       body is direct child of html
+		   /html/body/table in xpath - table is subchild of html
+                   /html//table              - for subchild we have to use //
+
+
+
+Assignment:
+------------------
+
+class="inlineBlock _3ma _6n _6s _6v"->
+When we use driver.findElement(By.className("inlineBlock _3ma _6n _6s _6v")).getText()
+throws invalid selector exception .. reason compound class names not supported.
+
+Compound ClassNames are supported as follows by xpath:
+--------------------------------------------------------
+(//h2[contains(@class,'_3ma')])[2]
+gm
+//div[@id='u_0_a']//input[contains(@class,'2ph')] - Contains func,subchild concept
+
+Points to be Noted::
+---------------------------------
+1. Multiple children belong to the same parent which are having
+   same tag name we can use indexing..
+
+2. Xpath is matching multiple nodes..//input
+	a. First the element has any properties//input[@id='username']
+		(or)
+    b. Associate parent and properties of parent//td[@name='']/input  
+		
+		(or) 
+	c. Associate ancestor and properties of ancestor //tr[@id='item1']/td/input
+        	(or)
+	d. Associate th child and properties of child   //td[2]/input[@name='username']
+--------------------------------------------------------------------------------------
+8. Css Selector:
+-------------------
+Css Stands for cascading style sheets.they are two different css paths.
+1. Absolute CSS:
+                    /html/body/table/tbody/tr[1]/td[2]/input
+                   /html/body in xpath -       body is direct child of html
+		            /html/body/table in xpath - table is subchild of html
+                   /html//table              - for subchild we have to use //
+
+                   /html/body/table/tbody/tr[1]/td[2]/input
+                    html>body>table>tbody>tr[1]>td[2]>input -  No complete CSS
+                    final css:
+                    html>body>table>tbody>tr:nth-of-type(1)>td:nth-of-type(2)>input 
+                      > - means direct child
+2. Relative
+
+			body>table>tbody>tr:nth-of-type(1)>td:nth-of-type(2)>input
+			table>tbody>tr:nth-of-type(1)>td:nth-of-type(2)>input
+			table[name='cart']>tbody>tr:nth-of-type(1)>td:nth-of-type(2)>input
+			tbody>tr:nth-of-type(1)>td:nth-of-type(2)>input
+			tr:nth-of-type(1)>td:nth-of-type(2)>input
+			tr[id='item1']>td:nth-of-type(2)>input
+			tr#item1>td:nth-of-type(2)>input
+			#item1>td:nth-of-type(2)>input
+			input[id='username']	
+			input#username
+			#username
+			html table     -SubChild
+Attribute Selector in CSS:
+------------------------
+tagName[attrname = 'attrvalue']  Example: table[name='cart']
+
+ID Selector :
+--------------- 
+tagName#idvalue
+#idvalue  Example:https://www.facebook.com/rsrc.php/v3/yx/r/pyNVUg5EM0j.png
+tr#item1
+#item1
+
+Class Selector:
+-----------------
+<input type="textbox" class="textboxcolor">
+<input type="textbox" class="a b  c d">-Compound Classes
+WebElement e = driver.findElement(By.className("textboxcolor"));
+.textboxcolor -  driver.findElement(By.cssSelector(".textboxcolor"));
+.a.b.c.d-  driver.findElement(By.cssSelector(".a.b.c.d"));
+Syntax: .classname
+-----------------------------------------------------------------------------------------------------------------------
+
+Select is a class in webdriver useful for retrieving the elements from the dropdown.
+
+Select select = new Select(WebElement);
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+findElement:
+-----------
+findElement returns an WebElement
+                      WebElement e =     driver.findElement(By.id("username"));
+
+
+findElement selects the first matching element which are having same attribute values.
+findElement throws NoSuchElementException if it is unable to identify the Element.
+NoSuchEelementException is an Run Time Exception. ( org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"passs word"})
+
+ <input type="text" id="username">
+ <input type="text" id="username">
+ <input type="text" id="username">
+
+findElements:
+----------------
+
+		List<WebElement>  e =     driver.findElements(By.id("username"));
+		syso(e.size()); ->3
+
+1. findElements returns an list of weblements.
+2. findElements selects all the matching elements which are having same attributes.
+3. findElements returns an empty list if it is unable to identfity the elements.
+
+getTitle()
+
+
+gettitle()//wrong
+
+getcurrenturl() //wrong
+
+Coding Conventions: 
+1.Methods the first word lowercase,from secondword the first letter is uppercase it is called CamelCase.
+2. Classes and Interfaces the first letter in each word is uppercase.
+
+getTitle
+getCurrentUrl
+
+class FirefoxDriver
+
+Interface WebDriver 
+
+
+
+
+sudheer.h2kinfosys@gmail.com
+
+
+
+
+html: hyper text mark up language contains pre-defined tags
+
+Structure of html:
+
+			<html>
+				<head>
+					<title> </tile>
+				</head>
+				<body>
+
+					<table>
+
+						<input
+					</table>
+				</body>
+		 	</html>
+
+
+ 
+
+
+
+
+
+driver.findElement(By.cssSelector("#username")).sendKeys("");
+
+
+

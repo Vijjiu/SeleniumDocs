@@ -1,0 +1,16 @@
+Jenkins 
+
+  One time activity:
+       1. Configure jenkins by providing the JAVA_HOME path
+           ----Completed
+       2. Download the maven plugin
+-         -------Completed
+
+  To trigger pom.xml
+  1. Create a maven job
+           --------------Completed
+  2. Configure the job and provide the location of pom.xml
+	    --------------Completed
+  3. Specify the Goals to perform 
+		-----------Completed
+  4. Trigger the job by clicking on 'Build Now' link

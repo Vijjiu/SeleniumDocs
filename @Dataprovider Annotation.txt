@@ -1,0 +1,83 @@
+Data Driven Framework which is an automation framework useful to execute the testcases
+using multiple sets of data.
+
+
+  driver.findElement(By.id("username")).sendKeys("selenium"); 
+
+  data is selenium.
+
+  Separate the data from the code and store it in the external resources like excel
+
+  Read the excel and pass it to the selenium code.
+
+How to read and pass it to selenium code???
+
+ 
+
+@DataProvider
+-------------------
+
+
+In order to store the multiple set of input data we use @DataProvider.
+
+We are going to read the xls file which contains input data and store in @Dataprovider.
+
+
+ Steps to achieve :
+ ----------------------
+
+  a. Store the input data in an xls file.
+
+  b. Read the data from the xls using an third party jar jxl2.6.jar
+
+   jxl jar download link ->http://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl/2.6.12
+   jxl stands for -> java excel library
+	
+ c. Add the jar to the build path.
+
+
+   Workbook contains 3 sheets. They are referred by index / sheet name.
+   Sheet contains rows and columns.
+   We call the data is stored in the excel as  cell
+   Store the data into the 2-D array.
+ 
+  d. Store the data in @Dataprovider
+  e. Use the @Dataprovider in the @Test methods.
+
+
+JExcel API ->http://jexcelapi.sourceforge.net/resources/javadocs/2_6_10/docs/
+
+
+  WorkBook contains sheets
+  Sheets contains rows(3) and column(2)
+  Each and every values stored in the rows and columns in a cell.
+  Retrieve the contents of the cell using row index and column index and store in an array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

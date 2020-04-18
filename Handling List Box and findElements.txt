@@ -1,0 +1,65 @@
+Handling List Box / Combo Box:
+----------------------------------
+1. Seleting a particular element from list box
+2. Finding the size of the list box
+3. Retrieve all the elements from list box.
+4. Select a particular element from the list box based on the input
+provided by user.
+
+Assignment: Apply above 4 steps for day and year as well
+
+Select select = new Select(month); WE have to create a object.
+
+Go through the parameterized constructor.
+
+findElement()
+---------------------
+1. findElement() returns a webElement
+2. findElement() to select a webelement using 8 ways.
+3. findElement() always select the first element from the list of elements having
+same properties.(id,name,classname,tagName,xpath,linktext,plinkText,css)
+4. findElement() throws NoSuchElementException when it is unable to identify the elements
+
+findElements()
+------------------
+
+1. findElements() returns a list of webElements
+
+2. findElements() to select a webelement using 8 ways.
+
+3. findElements() always selects all the elements from the list of elements having
+same properties.(id,name,classname,tagName,xpath,linktext,plinkText,css)
+
+4. findElements() return emtpy list when it is unable to identify the elements
+
+
+Assignment:
+Use findElements for type='checkbox' and retrieve the checkbox size and
+select all the checkboxes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

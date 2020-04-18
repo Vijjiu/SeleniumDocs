@@ -1,0 +1,105 @@
+ 
+Handling Windows/Browsers:
+---------------------------
+When ever we try to open the page the focus is on the parent page(loginPage).
+If you want to change the focus from parent window to child window we have to use
+the following method
+Logic:
+------------
+
+driver.get("http://www.facebook.com");
+
+driver.findElement(By.linkText("Data Policy")).click();
+
+String parent= driver.getWindowHandle();//gives the window name of the browser which has focus.(parent page)
+
+Set<String> wlist=driver.getWindowHandles();	// wlist contains parent and child
+
+
+//Enhanced for loop or for each
+for(String s: wlist)
+{
+
+	if(!(s.equals(parent)))                       //(s!=parent)  )
+	{
+		driver.switchTo().window(s);
+		syso(driver.getTitle()); // Data policy
+		if(driver.getTitle().equals("Data Policy"))
+		{
+
+
+		}
+		else if(driver.getTitle().equals("Sign up"))
+		{
+
+
+		}
+		
+
+	}
+
+}
+
+
+
+
+
+driver.switchTo().window(String WindowName);
+
+
+
+
+
+
+
+
+
+
+//focus changes to child window(sign in)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

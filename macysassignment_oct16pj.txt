@@ -1,0 +1,4 @@
+1. First open macys.com
+2. Handle popup..if it is there click ok and continue.. else roceed to step3...
+3. Search for jeans..select the 2nd option..and click on search button..
+4. 
